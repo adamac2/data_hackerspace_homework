@@ -24,8 +24,8 @@ def histogram_times(filename):
                 tempArr = tempArr[1:]
             tempArr[0] = tempArr[0].replace("c", "")
             print(i)
-            if int(tempArr[0]) < 25:
-                returnArr[int(tempArr[0]) - 1] += 1
+            if int(tempArr[0]) < 24:
+                returnArr[int(tempArr[0])] += 1
     return returnArr
 
 
