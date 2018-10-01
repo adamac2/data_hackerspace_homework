@@ -86,8 +86,7 @@ def normalize(image):
     return(return_image)
 
 
-def sigmoid_normalize(image):
-    a = image.max() - image.min()
+def sigmoid_normalize(image, a):
     return_image = np.copy(image)
     for arr in range(0, len(image)):
         for i in range(0, len(image[arr])):
